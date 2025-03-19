@@ -1,0 +1,21 @@
+package lab_java;
+
+public class Funcionario extends Pessoa {
+    private Data admissao;
+    private double salario;
+
+    public Funcionario(String nome, long cpf, Data nascimento, Data admissao, double salario) {
+        super(nome, cpf, nascimento);
+        this.admissao = admissao;
+        this.salario = salario;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + ", Admissão: " + admissao + ", Salário: R$" + String.format("%.2f", salario);
+    }
+}

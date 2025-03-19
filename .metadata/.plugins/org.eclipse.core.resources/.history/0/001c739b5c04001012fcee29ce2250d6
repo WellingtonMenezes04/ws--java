@@ -1,0 +1,64 @@
+package entites;
+
+public class Person {	
+	
+	private int number;
+	private String name;
+	private double init_value;
+	private double quantity;
+	
+	
+	public Person(int number, String name, double init_value) {
+
+		this.number = number;
+		this.name = name;
+		this.init_value = init_value;
+	}
+	
+	public Person(int number, String name) {
+
+		this.number = number;
+		this.name = name;
+	}
+	
+	public int getNumber() {
+		return number;
+	}
+
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public double getInit_value() {
+		return init_value;
+	}
+	
+	public void setQuantity(double quantity){
+		this.quantity = quantity;
+	}
+	
+	public void addMoney(double quantity) {
+		this.init_value += quantity;
+	}
+	
+	public void removeMoney(double quantity) {
+		this.init_value -= quantity + 5;
+	}
+
+	@Override
+	public String toString() {
+		return "Account " 
+				+ number
+				+", Holder:"
+				+ name
+				+ ", Balance: $"
+				+ String.format("%.2f", init_value)
+				+ "%n"
+				;
+	}
+	
+}

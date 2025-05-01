@@ -4,6 +4,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 import entities.Account;
+import entities.BussinesAccount;
 import entities.SavingsAccount;
 
 public class Program {
@@ -13,14 +14,9 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		Account x = new Account(1020, "Alex", 1000.00);
-		Account y = new SavingsAccount(1023, "Maria", 1000.00, 0.01);
-		
-		x.withDraw(50.00);
-		y.withDraw(50.00);
-		
-		System.out.println(x.getBalance());
-		System.out.println(y.getBalance());
+		Account acc1 = new Account(1001, "Alex", 1000.0);
+		Account acc2 = new BussinesAccount(1002, "Maria", 1000.0 , 0.01);
+		Account acc3 = new SavingsAccount(1003, "Bob", 1000.0, 500.00);
 				
 			
 		sc.close();

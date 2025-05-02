@@ -1,6 +1,6 @@
 package entities;
 
-public class PessoaJuridica extends Pessoa{
+public final class PessoaJuridica extends Pessoa{
 	
 	private Integer employees;
 

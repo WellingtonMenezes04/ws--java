@@ -1,6 +1,6 @@
 package entities;
 
-public class PessoaFisica extends Pessoa{
+public final class PessoaFisica extends Pessoa{
 	
 	private Double healthcare;
 

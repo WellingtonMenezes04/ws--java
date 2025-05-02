@@ -30,7 +30,7 @@ public class Program {
 			System.out.print("Anual income: ");
 			double amount = sc.nextDouble();
 			if (c == 'i') {
-				System.out.println("Health expenditures: ");
+				System.out.print("Health expenditures: ");
 				double healthcare = sc.nextDouble();
 				Pessoa ps = new PessoaFisica(name, amount, healthcare);
 				list.add(ps);
